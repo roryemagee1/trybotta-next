@@ -2,9 +2,11 @@
 import styles from '@/app/home.module.css';
 export default function View() {
   return (
-    <div className={styles.view}>
-      <h1>View</h1>
-    </div>
+    <section className={styles.view}>
+      <div>
+        
+      </div>
+    </section>
   );
 }
 

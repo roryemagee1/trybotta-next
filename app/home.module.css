@@ -1,12 +1,27 @@
 .home {
-  background-color: var(--ibottagray)
+  background-color: var(--ibottagray);
+
+  min-height: 100vh;
+
+  overflow-y: hidden;
+}
+
+.home > header {
+  height: 10vh;
+}
+
+.trybotta {
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+  margin: 0 20px;
 }
 
 .home > main {
-  background-color: green;
+  background-color: var(--background);
 
   width: 100vw;
-  min-height: 100vh;
+  min-height: 90vh;
 
   display: flex;
 }
@@ -15,10 +30,26 @@
   background-color: azure;
 
   min-width: 35vw;
+  min-height: 90vh;
+
+  border: 1px solid lightgrey;
 }
 
 .view {
   background-color: gainsboro;
 
   min-width: 65vw;
+  min-height: 90vh;
+
+  overflow-y: auto
+}
+
+.view > div {
+  max-width: 600px;
+  min-height: calc(90vh - 40px);
+
+  margin: 20px auto 0;
+  box-sizing: border-box;
+
+  background-color: azure;
 }

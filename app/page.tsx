@@ -1,13 +1,16 @@
 // import Image from "next/image";
 
-import Panel from '@/app/components/panel/panel'
-import View from '@/app/components/view/view'
+import Panel from '@/app/components/panel/panel';
+import View from '@/app/components/view/view';
 import styles from '@/app/home.module.css';
+import { museoModerno } from '@/app/fonts/fonts';
 
 export default function Home() {
   return (
     <div className={styles.home}>
-      <h1>Test</h1>
+      <header>
+        <h1 className={`${museoModerno.className} ${styles.trybotta}`}>trybotta</h1>
+      </header>
       <main>
         <Panel />
         <View />
