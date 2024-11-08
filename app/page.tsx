@@ -1,7 +1,7 @@
 // import Image from "next/image";
 
-import Panel from '@/app/components/panel/panel';
-import View from '@/app/components/view/view';
+import Panel from '@/app/ui/panel/panel';
+import View from '@/app/ui/view/view';
 import styles from '@/app/home.module.css';
 import { museoModerno } from '@/app/fonts/fonts';
 
