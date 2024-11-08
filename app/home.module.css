@@ -1,0 +1,24 @@
+.home {
+  background-color: var(--ibottagray)
+}
+
+.home > main {
+  background-color: green;
+
+  width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+}
+
+.panel {
+  background-color: azure;
+
+  min-width: 35vw;
+}
+
+.view {
+  background-color: gainsboro;
+
+  min-width: 65vw;
+}
