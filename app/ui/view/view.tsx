@@ -15,7 +15,7 @@ import { Html } from '@react-email/html'
 import styles from '@/app/home.module.css';
 
 import Header from '@/app/components/header';
-import Image from '@/app/components/image';
+import Photo from '@/app/components/photo';
 import Textbox from '@/app/components/textbox';
 import Btn from '@/app/components/btn';
 import Slide from '@/app/components/slide';
@@ -24,9 +24,9 @@ import Footer from '@/app/components/footer';
 export function View() {
   return (
     <section className={styles.view}>
-      {/* <div> */}
+      <div>
         <Letter />
-      {/* </div> */}
+      </div>
     </section>
   );
 }
@@ -49,7 +49,7 @@ export function Letter() {
         backgroundColor: "gray"
       }}>
         <Header />
-        <Image />
+        <Photo />
         <Textbox />
         <Btn />
         <Slide />

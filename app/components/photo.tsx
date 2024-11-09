@@ -7,7 +7,7 @@ import { Img } from '@react-email/img';
 // import { Heading } from '@react-email/heading'
 import { Section } from '@react-email/section';
 
-export default function Image() {
+export default function Photo() {
   return (
     <Section style={{height: "20rem", backgroundColor: "azure"}}>
       <Img style={{ margin: "auto", borderRadius: "25px"}} src="https://picsum.photos/550/300" />
