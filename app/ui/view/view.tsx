@@ -10,13 +10,14 @@ import { Section } from "@react-email/section";
 import { Head } from '@react-email/head'
 import { Html } from '@react-email/html'
 
-import { render } from '@react-email/render'
+// import { render } from '@react-email/render'
 
 import styles from '@/app/home.module.css';
 
 import Header from '@/app/components/header';
 import Image from '@/app/components/image';
 import Textbox from '@/app/components/textbox';
+import Btn from '@/app/components/btn';
 import Slide from '@/app/components/slide';
 import Icons from '@/app/components/icons';
 import Footer from '@/app/components/footer';
@@ -36,20 +37,21 @@ export function Letter() {
       minWidth: "280px",
       // maxWidth: "600px",
       width: "100%",
-      // marginLeft: "auto",
-      // marginRight: "auto",
-      backgroundColor: "gainsboro"
+      marginLeft: "auto",
+      marginRight: "auto",
+      backgroundColor: "#f0f2f5"
     }}>
       <Section style={{ 
         maxWidth: "600px",
         // minHeight: "calc(90vh-40px)", 
-        margin: "20px 20px", 
+        margin: "0 auto", 
         boxSizing: "border-box", 
-        backgroundColor: "grey"
+        backgroundColor: "gray"
       }}>
         <Header />
         <Image />
         <Textbox />
+        <Btn />
         <Slide />
         <Icons />
         <Footer />
