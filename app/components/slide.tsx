@@ -10,14 +10,14 @@ import { Heading } from '@react-email/heading';
 
 export default function Slide() {
   return (
-    <Row style={{minHeight: "20rem", backgroundColor: "#292f36" }} >
+    <Row style={{height: "22rem", backgroundColor: "#292f36" }} >
       <Column style={{ margin: "10px", width: "35%"}}>
-        <Img style={{ margin: "0 10px", borderRadius: "15px"}} src="https://picsum.photos/300/350" />
+        <Img style={{ margin: "0 10px" }} src="https://picsum.photos/300/350" />
       </Column>
       <Column style={{ margin: "0 10px", width: "65%"}}>
         <Heading style={{fontSize: "3rem", margin: "0 20px", color: "white", textAlign: "center" }} as="h2">How cool!</Heading>
         <Text style={{fontSize: "1.5rem", margin: "0 20px", color: "white"}}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
         </Text>
       </Column>
     </Row>
