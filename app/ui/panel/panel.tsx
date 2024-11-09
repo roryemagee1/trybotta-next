@@ -14,7 +14,7 @@ export default function Panel() {
     <div className={styles.panel}>
       <h1>Panel</h1>
       <form action={handleSubmit}>
-        {/* <button>Send!</button> */}
+        <button>Send!</button>
       </form>
     </div>
   );

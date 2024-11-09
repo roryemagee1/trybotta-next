@@ -2,10 +2,9 @@ import { EmailTemplate } from '@/app/ui/view/view';
 import { Resend } from 'resend';
 import * as React from 'react';
 
-// const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST() {
-  const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const { data, error } = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>',
