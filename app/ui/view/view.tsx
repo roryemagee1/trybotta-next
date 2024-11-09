@@ -1,18 +1,20 @@
 
 import styles from '@/app/home.module.css';
+
+import Header from '@/app/components/header';
+import Welcome from '@/app/components/welcome';
+import Slide from '@/app/components/slide';
+import Icons from '@/app/components/icons';
+import Footer from '@/app/components/footer';
 export default function View() {
   return (
     <section className={styles.view}>
       <div>
-        <div className={styles.slide}>
-          
-        </div>
-        <div className={styles.altslide}>
-          
-        </div>
-        <div className={styles.slide}>
-          
-        </div>
+        <Header />
+        <Welcome />
+        <Slide />
+        <Icons />
+        <Footer />
       </div>
     </section>
   );

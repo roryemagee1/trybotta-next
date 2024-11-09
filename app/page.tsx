@@ -1,9 +1,9 @@
 // import Image from "next/image";
+import styles from '@/app/home.module.css';
+import { museoModerno } from '@/app/fonts/fonts';
 
 import Panel from '@/app/ui/panel/panel';
 import View from '@/app/ui/view/view';
-import styles from '@/app/home.module.css';
-import { museoModerno } from '@/app/fonts/fonts';
 
 export default function Home() {
   return (
