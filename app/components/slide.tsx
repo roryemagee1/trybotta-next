@@ -15,7 +15,7 @@ export default function Slide() {
         <Img style={{ margin: "0 10px", borderRadius: "15px"}} src="https://picsum.photos/300/350" />
       </Column>
       <Column style={{ margin: "0 10px", width: "65%"}}>
-        <Heading style={{fontSize: "3rem", margin: "0 20px", color: "white", textAlign: "center" }} as="h2">Wow!</Heading>
+        <Heading style={{fontSize: "3rem", margin: "0 20px", color: "white", textAlign: "center" }} as="h2">How cool!</Heading>
         <Text style={{fontSize: "1.5rem", margin: "0 20px", color: "white"}}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </Text>

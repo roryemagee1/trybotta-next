@@ -12,15 +12,15 @@ export default function Icons() {
     <Row style={{minHeight: "15rem", backgroundColor: "white" }} >
       <Column style={{ margin: "auto", width: "30%"}}>
         <Img style={{ margin: "auto", borderRadius: "15px"}} src="https://picsum.photos/150/150" />
-        <Text style={{ textAlign: "center"}}> 100% Value</Text>
+        <Text style={{ textAlign: "center"}}><strong>Cool Icon 1</strong></Text>
       </Column>
       <Column style={{ margin: "auto", width: "30%"}}>
         <Img style={{ margin: "auto", borderRadius: "15px"}} src="https://picsum.photos/150/150" />
-        <Text style={{ textAlign: "center"}}> 100% Value</Text>
+        <Text style={{ textAlign: "center"}}><strong>Cool Icon 2</strong></Text>
       </Column>
       <Column style={{ margin: "auto", width: "30%"}}>
         <Img style={{ margin: "auto", borderRadius: "15px"}} src="https://picsum.photos/150/150" />
-        <Text style={{ textAlign: "center"}}> 100% Value</Text>
+        <Text style={{ textAlign: "center"}}><strong>Cool Icon 3</strong></Text>
       </Column>
     </Row>
   )
