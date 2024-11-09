@@ -5,7 +5,12 @@ import { museoModerno } from '@/app/fonts/fonts';
 import Panel from '@/app/ui/panel/panel';
 import { View } from '@/app/ui/view/view';
 
-export default function Home() {
+import { fetchContentfulEntries } from '@/app/lib/data';
+
+export default async function Home() {
+  const entries = await fetchContentfulEntries();
+  console.log(entries);
+  
   return (
     <div className={styles.home}>
       <header>

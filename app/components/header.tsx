@@ -8,7 +8,7 @@ import { Section } from '@react-email/section';
 export default function Header() {
   return (
     <Section style={{height: "4rem", backgroundColor: "#292f36"}} >
-      <Heading style={{fontSize: "3rem", margin: "5px 10px", color: "white"}}>Trybotta</Heading>
+      <Heading style={{fontSize: "3rem", fontWeight: "800", margin: "5px 10px", color: "white"}}>trybotta</Heading>
     </Section>
   )
 }

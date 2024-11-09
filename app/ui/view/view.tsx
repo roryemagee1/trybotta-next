@@ -66,12 +66,15 @@ interface EmailTemplateProps {
 
 export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
   firstName,
-}) => (
-  <Html>
-    <Head />
-    <Letter />
-  </Html>
-);
+}) => {
+  console.log(firstName);
+  return(
+    <Html>
+      <Head />
+      <Letter />
+    </Html>
+  )
+};
 
 export default EmailTemplate;
 
