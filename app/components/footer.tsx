@@ -11,16 +11,16 @@ export default function Footer() {
   return (
       <Row style={{ minHeight: "4rem", backgroundColor: "#292f36" }} >
         <Column style={{ margin: "auto"}}>
-          <Link style={{ textAlign: "center"}}><Text style={{ textDecoration: "underline" }}>Privacy</Text></Link>
+          <Link href="https://ipn.ibotta.com/" style={{ textAlign: "center"}}><Text style={{ textDecoration: "underline" }}>Privacy</Text></Link>
         </Column>
         <Column style={{ margin: "auto"}}>
-          <Link style={{ textAlign: "center"}}><Text style={{ textDecoration: "underline" }}>Email preferences</Text></Link>
+          <Link href="https://ipn.ibotta.com/" style={{ textAlign: "center"}}><Text style={{ textDecoration: "underline" }}>Email preferences</Text></Link>
         </Column>
         <Column style={{ margin: "auto"}}>
-          <Link style={{ textAlign: "center"}}><Text style={{ textDecoration: "underline" }}>Contact us</Text></Link>
+          <Link href="https://ipn.ibotta.com/" style={{ textAlign: "center"}}><Text style={{ textDecoration: "underline" }}>Contact us</Text></Link>
         </Column>
         <Column style={{ margin: "auto"}}>
-          <Link style={{ textAlign: "center"}}><Text style={{ textDecoration: "underline" }}>Unsubscribe</Text></Link>
+          <Link href="https://ipn.ibotta.com/" style={{ textAlign: "center"}}><Text style={{ textDecoration: "underline" }}>Unsubscribe</Text></Link>
         </Column>
       </Row>
   )

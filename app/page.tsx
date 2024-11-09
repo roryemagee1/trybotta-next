@@ -10,6 +10,11 @@ export default function Home() {
     <div className={styles.home}>
       <header>
         <h1 className={`${museoModerno.className} ${styles.trybotta}`}>trybotta</h1>
+        <nav>
+          <h2 style={{ textDecoration: "underline"}} className={`${museoModerno.className} ${styles.navbar}`}>Emailer</h2>
+          <h2 className={`${museoModerno.className} ${styles.navbar}`}>About</h2>
+          <h2 className={`${museoModerno.className} ${styles.navbar}`}>Settings</h2>
+        </nav>
       </header>
       <div className={styles.headerspacer} />
       <main>
