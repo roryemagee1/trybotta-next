@@ -1,7 +1,3 @@
-
-import styles from '@/app/components/components.module.css';
-import { museoModerno } from '@/app/fonts/fonts';
-
 // import { Body } from '@react-email/body'
 // import { Button } from '@react-email/button'
 // import { Container } from '@react-email/container'
@@ -14,11 +10,5 @@ export default function Header() {
     <Section style={{height: "4rem", backgroundColor: "#292f36"}} >
       <Heading style={{fontSize: "3rem", margin: "5px 10px", color: "white"}}>Trybotta</Heading>
     </Section>
-   
   )
 }
-
- // <div className={styles.newsletterhead}>
-    // <div style={{backgroundColor:"green"}}>
-    //   <h1 className={`${museoModerno.className} ${styles.trybotta}`}>trybotta</h1>
-    // </div>

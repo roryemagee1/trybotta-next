@@ -15,7 +15,8 @@ import { render } from '@react-email/render'
 import styles from '@/app/home.module.css';
 
 import Header from '@/app/components/header';
-import Welcome from '@/app/components/welcome';
+import Image from '@/app/components/image';
+import Textbox from '@/app/components/textbox';
 import Slide from '@/app/components/slide';
 import Icons from '@/app/components/icons';
 import Footer from '@/app/components/footer';
@@ -31,18 +32,28 @@ export function View() {
 
 export function Letter() {
   return (
-    <Section style={{ 
-      maxWidth: "600px", 
-      // minHeight: "calc(90vh-40px)", 
-      margin: "20px auto", 
-      boxSizing: "border-box", 
-      backgroundColor: "azure"
+    <Section style={{
+      minWidth: "280px",
+      // maxWidth: "600px",
+      width: "100%",
+      // marginLeft: "auto",
+      // marginRight: "auto",
+      backgroundColor: "gainsboro"
     }}>
-      <Header />
-      <Welcome />
-      <Slide />
-      <Icons />
-      <Footer />
+      <Section style={{ 
+        maxWidth: "600px",
+        // minHeight: "calc(90vh-40px)", 
+        margin: "20px 20px", 
+        boxSizing: "border-box", 
+        backgroundColor: "grey"
+      }}>
+        <Header />
+        <Image />
+        <Textbox />
+        <Slide />
+        <Icons />
+        <Footer />
+      </Section>
     </Section>
   )
 }
