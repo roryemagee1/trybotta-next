@@ -1,3 +1,19 @@
+import * as React from "react";
+// import Image from 'next/image'
+// import {
+//   Body,
+//   Button,
+//   Container,
+//   Head,
+//   Hr,
+//   Html,
+//   Img,
+//   Preview,
+//   Section,
+//   Text,
+// } from '@react-email/components';
+// import { Img } from '@react-email/components';
+// import { Img } from "@react-email/img";
 
 import styles from '@/app/home.module.css';
 
@@ -6,7 +22,7 @@ import Welcome from '@/app/components/welcome';
 import Slide from '@/app/components/slide';
 import Icons from '@/app/components/icons';
 import Footer from '@/app/components/footer';
-export default function View() {
+export function View() {
   return (
     <section className={styles.view}>
       <div>
@@ -20,4 +36,23 @@ export default function View() {
   );
 }
 
-// className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"
+
+
+interface EmailTemplateProps {
+  firstName: string;
+}
+
+export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
+  firstName,
+}) => (
+  <div>
+    <h1>Welcome, {firstName}!</h1>
+    <Header />
+    <Welcome />
+    <Slide />
+    <Icons />
+    <Footer />
+  </div>
+);
+
+export default EmailTemplate;

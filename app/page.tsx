@@ -3,7 +3,9 @@ import styles from '@/app/home.module.css';
 import { museoModerno } from '@/app/fonts/fonts';
 
 import Panel from '@/app/ui/panel/panel';
-import View from '@/app/ui/view/view';
+import { View } from '@/app/ui/view/view';
+
+import POST from '@/api/send/route';
 
 export default function Home() {
   return (
