@@ -1,19 +1,16 @@
 import * as React from "react";
-// import Image from 'next/image'
-// import {
-//   Body,
-//   Button,
-//   Container,
-//   Head,
-//   Hr,
-//   Html,
-//   Img,
-//   Preview,
-//   Section,
-//   Text,
-// } from '@react-email/components';
-// import { Img } from '@react-email/components';
-// import { Img } from "@react-email/img";
+
+// import { Body } from '@react-email/body'
+// import { Button } from '@react-email/button'
+// import { Container } from '@react-email/container'
+// import { Img } from '@react-email/img';
+// import { Text } from '@react-email/text'
+
+import { Section } from "@react-email/section";
+import { Head } from '@react-email/head'
+import { Html } from '@react-email/html'
+
+import { render } from '@react-email/render'
 
 import styles from '@/app/home.module.css';
 
@@ -26,14 +23,22 @@ export function View() {
   return (
     <section className={styles.view}>
       <div>
-        <Header />
-        <Welcome />
-        <Slide />
-        <Icons />
-        <Footer />
+        <Letter />
       </div>
     </section>
   );
+}
+
+export function Letter() {
+  return (
+    <Section>
+      <Header />
+      <Welcome />
+      <Slide />
+      <Icons />
+      <Footer />
+    </Section>
+  )
 }
 
 
@@ -45,14 +50,16 @@ interface EmailTemplateProps {
 export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
   firstName,
 }) => (
-  <div>
-    <h1>Welcome, {firstName}!</h1>
-    <Header />
-    <Welcome />
-    <Slide />
-    <Icons />
-    <Footer />
-  </div>
+  <Html>
+    <Head />
+    <Letter />
+  </Html>
 );
 
 export default EmailTemplate;
+
+
+// const htmlTest = render(<Letter />, {
+//   pretty: true
+// })
+// console.log("html: ", htmlTest);

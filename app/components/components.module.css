@@ -10,3 +10,17 @@
   height: 10vh;
   background: darkgray;
 }
+
+
+.trybotta {
+  color: white;
+  font-weight: 800;
+  font-size: 3rem;
+  margin: 0 20px;
+}
+
+.newsletterhead {
+  background-color: var(--ibottagray);
+  height: 10vh;
+  width: 100%;
+}
