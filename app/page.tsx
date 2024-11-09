@@ -11,8 +11,10 @@ export default function Home() {
       <header>
         <h1 className={`${museoModerno.className} ${styles.trybotta}`}>trybotta</h1>
       </header>
+      <div className={styles.headerspacer} />
       <main>
         <Panel />
+        <div className={styles.panelspacer} />
         <View />
       </main>
     </div>

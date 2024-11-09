@@ -1,20 +1,27 @@
-.home {
-  background-color: var(--ibottagray);
-
-  min-height: 100vh;
-
-  overflow-y: hidden;
-}
-
-.home > header {
-  height: 10vh;
-}
+/* UI */
 
 .trybotta {
   color: white;
   font-weight: 800;
   font-size: 3rem;
   margin: 0 20px;
+}
+
+/* Home */
+
+.home {
+  min-height: 100vh;
+
+  overscroll-behavior: none;
+  overflow-y: hidden;
+}
+
+.home > header {
+  background-color: var(--ibottagray);
+  height: 10vh;
+
+  position: fixed;
+  width: 100%;
 }
 
 .home > main {
@@ -24,7 +31,21 @@
   min-height: 90vh;
 
   display: flex;
+
+  overflow-y: hidden;
 }
+
+.headerspacer {
+  height: 10vh;
+  width: 100%;
+}
+
+.panelspacer {
+  min-width: 35vw;
+  min-height: 90vh;
+}
+
+/* Panel */
 
 .panel {
   background-color: azure;
@@ -33,7 +54,13 @@
   min-height: 90vh;
 
   border: 1px solid lightgrey;
+
+  position: fixed;
+  top: 10vh;
+  left: 0;
 }
+
+/* View */
 
 .view {
   background-color: gainsboro;
@@ -41,15 +68,29 @@
   min-width: 65vw;
   min-height: 90vh;
 
-  overflow-y: auto
+  overflow-y: auto;
 }
 
 .view > div {
   max-width: 600px;
   min-height: calc(90vh - 40px);
 
-  margin: 20px auto 0;
+  margin: 20px auto;
   box-sizing: border-box;
 
   background-color: azure;
+}
+
+.slide {
+  width: 100%;
+  height: 400px;
+  
+  background-color: grey;
+}
+
+.altslide {
+  width: 100%;
+  height: 400px;
+  
+  background-color: darkgrey;
 }

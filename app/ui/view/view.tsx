@@ -4,7 +4,15 @@ export default function View() {
   return (
     <section className={styles.view}>
       <div>
-        
+        <div className={styles.slide}>
+          
+        </div>
+        <div className={styles.altslide}>
+          
+        </div>
+        <div className={styles.slide}>
+          
+        </div>
       </div>
     </section>
   );
