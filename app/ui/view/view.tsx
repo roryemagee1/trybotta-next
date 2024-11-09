@@ -22,16 +22,22 @@ import Footer from '@/app/components/footer';
 export function View() {
   return (
     <section className={styles.view}>
-      <div>
+      {/* <div> */}
         <Letter />
-      </div>
+      {/* </div> */}
     </section>
   );
 }
 
 export function Letter() {
   return (
-    <Section>
+    <Section style={{ 
+      maxWidth: "600px", 
+      // minHeight: "calc(90vh-40px)", 
+      margin: "20px auto", 
+      boxSizing: "border-box", 
+      backgroundColor: "azure"
+    }}>
       <Header />
       <Welcome />
       <Slide />
@@ -40,8 +46,6 @@ export function Letter() {
     </Section>
   )
 }
-
-
 
 interface EmailTemplateProps {
   firstName: string;
