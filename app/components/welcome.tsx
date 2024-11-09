@@ -1,5 +1,9 @@
+
+import styles from '@/app/components/components.module.css';
 export default function Welcome() {
   return (
-    <h1>Welcome!</h1>
+    <div className={styles.alttest}>
+      <h1>Welcome!</h1>
+    </div>
   )
 }

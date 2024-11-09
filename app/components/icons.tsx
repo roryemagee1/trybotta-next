@@ -1,5 +1,9 @@
+
+import styles from '@/app/components/components.module.css';
 export default function Icons() {
   return (
-    <h1>Icons!</h1>
+    <div className={styles.alttest}>
+      <h1>Icons!</h1>
+    </div>
   )
 }
