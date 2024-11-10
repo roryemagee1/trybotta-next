@@ -4,14 +4,13 @@ import * as React from 'react';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(newsletter) {
+export async function POST(newsletter, subject, email, recipient, fromLine ) {
   try {
     const { data, error } = await resend.emails.send({
-      from: 'Audasite LLC <no-reply@resend.dev>',
-      // to: ['delivered@resend.dev'],
-      to: ['roryemagee@gmail.com'],
-      subject: "Newsletter",
-      react: EmailTemplate({ firstName: "John", newsletter }) as React.ReactElement,
+      from: `${fromLine || 'Audasite LLC'} <no-reply@resend.dev>`,
+      to: [email],
+      subject: `${subject || "Newsletter"}`,
+      react: EmailTemplate({ firstName: `${recipient || "User"}`, newsletter }) as React.ReactElement,
     });
 
     if (error) {
@@ -23,3 +22,11 @@ export async function POST(newsletter) {
     return Response.json({ error }, { status: 500 });
   }
 }
+
+// const { data, error } = await resend.emails.send({
+//   from: 'Audasite LLC <no-reply@resend.dev>',
+//   // to: ['delivered@resend.dev'],
+//   to: ['roryemagee@gmail.com'],
+//   subject: "Newsletter",
+//   react: EmailTemplate({ firstName: "John", newsletter }) as React.ReactElement,
+// });

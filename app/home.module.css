@@ -118,3 +118,56 @@
   
   background-color: darkgrey;
 }
+
+/* View */
+
+.formpanel > div {
+  display: flex;
+  flex-direction: column;
+
+  margin: 15px;
+}
+
+.formpanel > div > label {
+  font-size: 1.1rem;
+  font-weight: 550;
+  color: var(--ibottagray);
+}
+
+.formpanel > div > input {
+  padding: 3px;
+  border: 1px solid gainsboro;
+  font-size: 14px;
+  font-weight: 550;
+  width: 240px;
+  background-color: snow;
+  border-radius: 30px;
+}
+
+.formpanel > button {
+  padding: 10px;
+  background-color: var(--ibottagray);
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 150px;
+}
+
+.formpanel > button:hover {
+  padding: 10px;
+  background-color: deeppink;
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 150px;
+}
+
+.formpanel > button:focus {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.formpanel > button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

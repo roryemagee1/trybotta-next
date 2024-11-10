@@ -60,16 +60,19 @@ export function Letter({ newsletter }) {
 
 interface EmailTemplateProps {
   firstName: string;
+  newsletter: any;
 }
 
 export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
   firstName, 
   newsletter
 }) => {
-  console.log(firstName);
-  return(
+  return (
     <Html>
       <Head />
+      <p>{firstName},</p>
+      <p></p>
+      <p>Click the dots to check out the newsletter, below: </p>
       <Letter newsletter={newsletter} />
     </Html>
   )
@@ -82,3 +85,5 @@ export default EmailTemplate;
 //   pretty: true
 // })
 // console.log("html: ", htmlTest);
+
+

@@ -20,7 +20,7 @@ export default async function Home() {
   const items = await fetchContentfulEntries();
   // console.log(items);
 
-  function mapItems(item) {
+  function mapItems(item: any) {
     switch(item.fields.componentType) {
       case "Header":
         return <Header fields={item.fields} key={item.fields.order} />;
@@ -39,7 +39,7 @@ export default async function Home() {
     }
   }
 
-  const newsletter = await items.map(item => mapItems(item));
+  const newsletter = await items.map((item: any) => mapItems(item));
   
   return (
     <div className={styles.home}>
