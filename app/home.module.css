@@ -81,7 +81,8 @@
 
   position: fixed;
   top: 10vh;
-  left: 0;
+  /* left: 0; */
+  left: 65vw;
 }
 
 /* View */

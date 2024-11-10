@@ -53,9 +53,9 @@ export default async function Home() {
       </header>
       <div className={styles.headerspacer} />
       <main>
-        <Panel newsletter={newsletter} />
-        <div className={styles.panelspacer} />
         <View newsletter={newsletter} />
+        <div className={styles.panelspacer} />
+        <Panel newsletter={newsletter} />
       </main>
     </div>
   );
