@@ -7,15 +7,15 @@ export default function Icons({ fields }: any) {
     <Row style={{minHeight: "15rem", backgroundColor: fields.backgroundColor }} >
       <Column style={{ margin: "auto", width: "30%"}}>
         <Img style={{ margin: "auto", borderRadius: "15px", maxWidth: "200px" }} src={`https:${fields.icon1image.fields.file.url}`} />
-        <Text style={{ color: fields.color, textAlign: "center"}}><strong>{fields.icon1}</strong></Text>
+        <Text style={{ color: fields.color, textAlign: "center", fontSize: "1.5rem" }}><strong>{fields.icon1}</strong></Text>
       </Column>
       <Column style={{ margin: "auto", width: "30%"}}>
         <Img style={{ margin: "auto", borderRadius: "15px", maxWidth: "200px" }} src={`https:${fields.icon2image.fields.file.url}`} />
-        <Text style={{ color: fields.color, textAlign: "center"}}><strong>{fields.icon2}</strong></Text>
+        <Text style={{ color: fields.color, textAlign: "center", fontSize: "1.5rem" }}><strong>{fields.icon2}</strong></Text>
       </Column>
       <Column style={{ margin: "auto", width: "30%"}}>
         <Img style={{ margin: "auto", borderRadius: "15px", maxWidth: "200px" }} src={`https:${fields.icon3image.fields.file.url}`} />
-        <Text style={{ color: fields.color, textAlign: "center"}}><strong>{fields.icon3}</strong></Text>
+        <Text style={{ color: fields.color, textAlign: "center", fontSize: "1.5rem" }}><strong>{fields.icon3}</strong></Text>
       </Column>
     </Row>
   )
