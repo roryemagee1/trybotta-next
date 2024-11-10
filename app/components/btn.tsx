@@ -6,7 +6,7 @@ import { Button } from '@react-email/button'
 // import { Heading } from '@react-email/heading'
 import { Section } from '@react-email/section';
 export default function Btn({ fields }) {
-  console.log("button: ", fields);
+  // console.log("button: ", fields);
   return (
     <Section style={{ height: "4rem", backgroundColor: fields.backgroundColor}} >
       <Button 

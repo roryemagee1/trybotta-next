@@ -18,7 +18,7 @@ import { fetchContentfulEntries } from '@/app/lib/data';
 
 export default async function Home() {
   const items = await fetchContentfulEntries();
-  console.log(items);
+  // console.log(items);
 
   function mapItems(item) {
     switch(item.fields.componentType) {
@@ -53,7 +53,7 @@ export default async function Home() {
       </header>
       <div className={styles.headerspacer} />
       <main>
-        <Panel />
+        <Panel newsletter={newsletter} />
         <div className={styles.panelspacer} />
         <View newsletter={newsletter} />
       </main>

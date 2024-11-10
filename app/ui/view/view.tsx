@@ -1,3 +1,5 @@
+
+
 import * as React from "react";
 
 // import { Body } from '@react-email/body'
@@ -32,7 +34,7 @@ export function View({ newsletter }) {
 }
 
 export function Letter({ newsletter }) {
-  console.log(newsletter);
+  // console.log(newsletter);
   return (
     <Section style={{
       minWidth: "280px",
@@ -49,31 +51,26 @@ export function Letter({ newsletter }) {
         boxSizing: "border-box", 
         backgroundColor: "gray"
       }}>
-        {/* <Header />
-        <Photo />
-        <Textbox />
-        <Btn />
-        <Slide />
-        <Icons />
-        <Footer /> */}
         {newsletter ? newsletter : null}
       </Section>
     </Section>
   )
 }
 
+
 interface EmailTemplateProps {
   firstName: string;
 }
 
 export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
-  firstName,
+  firstName, 
+  newsletter
 }) => {
   console.log(firstName);
   return(
     <Html>
       <Head />
-      <Letter />
+      <Letter newsletter={newsletter} />
     </Html>
   )
 };

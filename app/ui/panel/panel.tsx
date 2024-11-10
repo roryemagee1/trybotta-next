@@ -2,12 +2,12 @@
 import styles from '@/app/home.module.css';
 
 import { POST } from '@/app/api/send/route';
-export default function Panel() {
+export default function Panel({ newsletter }) {
 
   async function handleSubmit() {
     'use server';
 
-    POST();
+    POST(newsletter);
   }
 
   return (
