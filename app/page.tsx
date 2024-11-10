@@ -23,19 +23,19 @@ export default async function Home() {
   function mapItems(item) {
     switch(item.fields.componentType) {
       case "Header":
-        return <Header key={item.fields.order} />;
+        return <Header fields={item.fields} key={item.fields.order} />;
       case "Photo":
-        return <Photo key={item.fields.order} />;
+        return <Photo fields={item.fields} key={item.fields.order} />;
       case "Textbox":
-        return <Textbox key={item.fields.order} />;
+        return <Textbox fields={item.fields} key={item.fields.order} />;
       case "Btn":
-        return <Btn key={item.fields.order} />;
+        return <Btn fields={item.fields} key={item.fields.order} />;
       case "Slide":
-        return <Slide key={item.fields.order} />;
+        return <Slide fields={item.fields} key={item.fields.order} />;
       case "Icons":
-        return <Icons key={item.fields.order} />;
+        return <Icons fields={item.fields} key={item.fields.order} />;
       case "Footer":
-        return <Footer key={item.fields.order} />;
+        return <Footer fields={item.fields} key={item.fields.order} />;
     }
   }
 

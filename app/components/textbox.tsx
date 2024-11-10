@@ -6,12 +6,13 @@
 import { Text } from '@react-email/text'
 import { Heading } from '@react-email/heading'
 import { Section } from '@react-email/section';
-export default function Textbox() {
+export default function Textbox({ fields }) {
+  console.log("textbox: ", fields);
   return (
-    <Section style={{minHeight: "4rem", backgroundColor: "azure"}} >
-      <Heading style={{fontSize: "3rem", margin: "0 20px", color: "black", textAlign: "center" }} as="h2">How cool!</Heading>
-      <Text style={{fontSize: "1.5rem", margin: "20px 40px", color: "black"}}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <Section style={{ minHeight: "4rem", backgroundColor: fields.backgroundColor }} >
+      {/* <Heading style={{ fontSize: "3rem", margin: "0 20px", color: "black", textAlign: "center" }} as={"h2"}>How cool!</Heading> */}
+      <Text style={{ fontSize: "1.7rem", textAlign: fields.textAlign, fontWeight: "300", margin: "20px 40px", color: fields.color }}>
+       {fields.text}
       </Text>
     </Section>
   )

@@ -5,22 +5,24 @@ import { Button } from '@react-email/button'
 // import { Text } from '@react-email/text'
 // import { Heading } from '@react-email/heading'
 import { Section } from '@react-email/section';
-export default function Btn() {
+export default function Btn({ fields }) {
+  console.log("button: ", fields);
   return (
-    <Section style={{ height: "4rem", backgroundColor: "azure" }} >
+    <Section style={{ height: "4rem", backgroundColor: fields.backgroundColor}} >
       <Button 
-        href="https://ipn.ibotta.com/" 
+        href={fields.buttonHref} 
         style={{
           fontSize: "2rem", 
           margin: "0 35%",
-          padding: "5px",
-          color: "white", 
-          backgroundColor: "#292f36", 
-          textAlign: "center",
-          borderRadius: "15px"
+          padding: "5px 8px",
+          color: fields.color, 
+          backgroundColor: fields.buttonColor, 
+          textAlign: fields.textAlign,
+          borderRadius: "30px",
+          minWidth: "30px"
         }}
       >
-      Learn More
+      {fields.buttonText}
       </Button>
     </Section>
   )

@@ -7,10 +7,14 @@ import { Img } from '@react-email/img';
 // import { Heading } from '@react-email/heading'
 import { Section } from '@react-email/section';
 
-export default function Photo() {
+export default function Photo({ fields }) {
+  // console.log("photo: ", fields)
+  console.log("tag: ", fields.hTag);
   return (
-    <Section style={{height: "20rem", backgroundColor: "azure"}}>
-      <Img style={{ margin: "auto", borderRadius: "25px"}} src="https://picsum.photos/550/300" />
+    <Section style={{ height: "20rem", backgroundColor: fields.backgroundColor }}>
+      <Img style={{ margin: "auto", borderRadius: "25px"}} src={fields.photo.fields.file.url} />
     </Section>
   )
 }
+
+// "https://picsum.photos/550/300" 
