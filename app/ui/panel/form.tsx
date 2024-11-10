@@ -2,7 +2,7 @@
 
 import styles from '@/app/home.module.css';
 import { useState, useId } from 'react';
-export default function Form({ handleSubmit }) {
+export default function Form({ handleSubmit }: any) {
   const [ subject, setSubject ] = useState("");
   const [ email, setEmail ] = useState("");
   const [ recipient, setRecipient ] = useState("");

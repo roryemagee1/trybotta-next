@@ -1,13 +1,5 @@
 import { createClient } from 'contentful';
 
-import Header from '@/app/components/header';
-import Photo from '@/app/components/photo';
-import Textbox from '@/app/components/textbox';
-import Btn from '@/app/components/btn';
-import Slide from '@/app/components/slide';
-import Icons from '@/app/components/icons';
-import Footer from '@/app/components/footer';
-
 const space: string = process.env.CONTENTFUL_SPACE_ID || "";
 const accessToken: string = process.env.CONTENTFUL_ACCESS_TOKEN || "";
 
@@ -29,8 +21,8 @@ export async function fetchContentfulEntries() {
   }
 }
 
-function sortByOrder(items) {
-  const sortedItems = items.sort((a, b) => a.fields.order - b.fields.order);
+function sortByOrder(items: any) {
+  const sortedItems = items.sort((a: any, b: any) => a.fields.order - b.fields.order);
   return sortedItems;
 }
 

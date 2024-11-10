@@ -1,16 +1,9 @@
-// import { Body } from '@react-email/body'
-// import { Button } from '@react-email/button'
-// import { Container } from '@react-email/container'
 import { Img } from '@react-email/img';
 import { Text } from '@react-email/text';
 import { Column } from '@react-email/column';
 import { Row } from '@react-email/row';
 import { Heading } from '@react-email/heading';
-// import { Section } from '@react-email/section';
-
-export default function Slide({ fields }) {
-  // console.log("slide: ", fields);
-
+export default function Slide({ fields }: any) {
   return (
     <Row style={{height: "22rem", backgroundColor: fields.backgroundColor }} >
       <Column style={{ margin: "0 10px 0 0", width: "43%", height: "100%" }}>
@@ -34,5 +27,3 @@ export default function Slide({ fields }) {
     </Row>
   )
 }
-
-// src="https://picsum.photos/300/350"

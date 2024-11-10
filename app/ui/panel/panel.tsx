@@ -5,9 +5,9 @@ import Form from '@/app/ui/panel/form';
 import { POST } from '@/app/api/send/route';
 
 
-export default function Panel({ newsletter }) {
+export default function Panel({ newsletter }: any) {
 
-  async function handleSubmit(subject, email, recipient, fromLine) {
+  async function handleSubmit(subject: any, email: any, recipient: any, fromLine: any) {
     'use server';
   
 

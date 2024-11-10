@@ -1,15 +1,8 @@
-
-// import { Body } from '@react-email/body'
-// import { Button } from '@react-email/button'
-// import { Container } from '@react-email/container'
 import { Img } from '@react-email/img';
 import { Text } from '@react-email/text'
 import { Column } from '@react-email/column'
 import { Row } from '@react-email/row'
-// import { Section } from '@react-email/section';
-export default function Icons({ fields }) {
-  // console.log("icons: ", fields);
-  
+export default function Icons({ fields }: any) { 
   return (
     <Row style={{minHeight: "15rem", backgroundColor: fields.backgroundColor }} >
       <Column style={{ margin: "auto", width: "30%"}}>
@@ -27,5 +20,3 @@ export default function Icons({ fields }) {
     </Row>
   )
 }
-
-// src="https://picsum.photos/150/150"
