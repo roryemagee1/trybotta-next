@@ -21,17 +21,18 @@ import Btn from '@/app/components/btn';
 import Slide from '@/app/components/slide';
 import Icons from '@/app/components/icons';
 import Footer from '@/app/components/footer';
-export function View() {
+export function View({ newsletter }) {
   return (
     <section className={styles.view}>
       <div>
-        <Letter />
+        <Letter newsletter={newsletter} />
       </div>
     </section>
   );
 }
 
-export function Letter() {
+export function Letter({ newsletter }) {
+  console.log(newsletter);
   return (
     <Section style={{
       minWidth: "280px",
@@ -48,13 +49,14 @@ export function Letter() {
         boxSizing: "border-box", 
         backgroundColor: "gray"
       }}>
-        <Header />
+        {/* <Header />
         <Photo />
         <Textbox />
         <Btn />
         <Slide />
         <Icons />
-        <Footer />
+        <Footer /> */}
+        {newsletter ? newsletter : null}
       </Section>
     </Section>
   )
