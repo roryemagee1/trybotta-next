@@ -1,24 +1,23 @@
-
 import styles from '@/app/home.module.css';
 
+import Form from '@/app/ui/panel/form';
+ 
 import { POST } from '@/app/api/send/route';
-export default function Panel() {
 
-  async function handleSubmit() {
+
+export default function Panel({ newsletter }: any) {
+
+  async function handleSubmit(subject: any, email: any, recipient: any, fromLine: any) {
     'use server';
+  
 
-    POST();
+    POST(newsletter, subject, email, recipient, fromLine);
   }
 
   return (
     <div className={styles.panel}>
-      <h1>Panel</h1>
-      <form action={handleSubmit}>
-        <button>Send!</button>
-      </form>
+      <Form handleSubmit={handleSubmit} />
     </div>
   );
 }
-
-// className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"
 

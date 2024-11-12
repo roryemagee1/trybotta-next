@@ -10,21 +10,19 @@ const client = createClient({
 
 export async function fetchContentfulEntries() {
   try {
-    const entries = await client.getEntries({
-      // content_type: "testBlogPost"
-    })
-    console.log(entries);
-
-    if (entries.items) {
-      return {
-        items: entries.items
-      }
-    }
+    const entries = await client.getEntries()
+    const sortedItems = sortByOrder(entries.items);
+    return sortedItems
   } catch(error) {
     console.log(error);
     return {
       message: "Failed to retrieve entries."
     }
   }
+}
+
+function sortByOrder(items: any) {
+  const sortedItems = items.sort((a: any, b: any) => a.fields.order - b.fields.order);
+  return sortedItems;
 }
 
