@@ -23,10 +23,13 @@
   overflow-y: hidden;
 }
 
-.home > header {
+.navbar > header {
   background-color: var(--ibottagray);
   height: 10vh;
 
+  box-sizing: border-box;
+  margin: 0 0 0 -20px;
+  
   position: fixed;
   width: 100%;
 
@@ -36,12 +39,12 @@
   align-items: center;
 }
 
-.home > header > nav {
+.navbar > header > nav {
   display: flex;
   flex-direction: row;
 }
 
-.home > header > nav > h2 {
+.navbar > header > nav > h2 {
   display: flex;
   flex-direction: column;
 
@@ -120,7 +123,7 @@
   background-color: darkgrey;
 }
 
-/* View */
+/* Form */
 
 .formpanel > div {
   display: flex;
