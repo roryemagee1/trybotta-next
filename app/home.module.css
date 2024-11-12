@@ -21,7 +21,7 @@
 /* Home */
 
 .home {
-  min-height: 100vh;
+  min-height: 90vh;
 
   overscroll-behavior: none;
   overflow-y: hidden;
