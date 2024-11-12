@@ -15,9 +15,9 @@ export default function Panel({ newsletter }: any) {
   }
 
   return (
-    <div className={styles.panel}>
+    <aside className={styles.panel}>
       <Form handleSubmit={handleSubmit} />
-    </div>
+    </aside>
   );
 }
 
