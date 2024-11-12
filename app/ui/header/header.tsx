@@ -17,12 +17,12 @@ export default function Header() {
           <Link
             href="/"
           >
-            <h2 className={`${roboto.className} ${styles.navitem} ${pathname === "/" && styles.navitemactive}`}>Blog</h2>
+            <span className={`${roboto.className} ${styles.navitem} ${pathname === "/" && styles.navitemactive}`}>Blog</span>
           </Link>
           <Link
             href="/newsletter"
           >
-            <h2 className={`${roboto.className} ${styles.navitem} ${pathname === "/newsletter" && styles.navitemactive}` }>Newsletter</h2>
+            <span className={`${roboto.className} ${styles.navitem} ${pathname === "/newsletter" && styles.navitemactive}` }>Newsletter</span>
           </Link>
         </nav>
       </header>

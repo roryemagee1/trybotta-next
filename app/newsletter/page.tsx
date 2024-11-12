@@ -41,7 +41,7 @@ export default async function Home() {
   const newsletter = await items.map((item: any) => mapItems(item));
   
   return (
-    <div className={styles.home}>
+    <div className={styles.newsletter}>
       <main>
         <View newsletter={newsletter} />
         <div className={styles.panelspacer} />

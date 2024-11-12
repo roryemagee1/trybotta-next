@@ -1,5 +1,5 @@
 
-// import Image from "next/image";
+import Image from "next/image";
 import styles from '@/app/home.module.css';
 import { museoModerno } from '@/app/fonts/fonts';
 
@@ -43,8 +43,17 @@ export default async function Home() {
   
   return (
     <div className={styles.home}>
-      <main>
-        
+      <main className="">
+        <Image 
+          src="/ibotta-assets/pocket-change.svg"
+          width={600}
+          height={119}
+          alt="Pocket Change"
+          className="mx-auto py-6"
+        />
+        <div style={{ height: "100vh"}}>
+          <p>Div!</p>
+        </div>
       </main>
     </div>
   );

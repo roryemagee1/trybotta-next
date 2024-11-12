@@ -4,7 +4,7 @@
   color: white;
   font-weight: 800;
   font-size: 3rem;
-  margin: 0 20px;
+  margin: 0 40px;
 }
 
 .navitem {
@@ -20,8 +20,15 @@
 
 /* Home */
 
-.home {
-  min-height: 90vh;
+.home > main {
+  min-height: calc(100vh - 100px);
+  background-color: white;
+}
+
+/* Newsletter */
+
+.newsletter {
+  min-height: 86vh;
 
   overscroll-behavior: none;
   overflow-y: hidden;
@@ -29,7 +36,7 @@
 
 .headerbar > header {
   background-color: var(--ibottagray);
-  height: 10vh;
+  height: 100px;
   
   position: fixed;
   width: 100%;
@@ -43,16 +50,18 @@
 .headerbar > header > nav {
   display: flex;
   flex-direction: row;
+
+  margin: 0 40px;
 }
 
-.headerbar > header > nav > h2 {
+.headerbar > header > nav > span {
   display: flex;
   flex-direction: column;
 
   color: white;
 }
 
-.home > main {
+.newsletter > main {
   background-color: var(--background);
 
   width: 100vw;
@@ -64,13 +73,13 @@
 }
 
 .headerspacer {
-  height: 10vh;
+  height: 100px;
   width: 100%;
 }
 
 .panelspacer {
   min-width: 35vw;
-  min-height: 90vh;
+  min-height: calc(100vh - 100px);
 }
 
 /* Panel */
@@ -79,12 +88,12 @@
   background-color: azure;
 
   min-width: 35vw;
-  min-height: 90vh;
+  min-height: calc(100vh - 100px);
 
   border: 1px solid lightgrey;
 
   position: fixed;
-  top: 10vh;
+  top: 100px;
   /* left: 0; */
   left: 65vw;
 }
@@ -95,7 +104,7 @@
   background-color: gainsboro;
 
   min-width: 65vw;
-  min-height: 90vh;
+  min-height: calc(100vh - 100px);
 
   overflow-y: auto;
 }
