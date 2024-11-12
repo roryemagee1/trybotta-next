@@ -7,11 +7,15 @@
   margin: 0 20px;
 }
 
-.navbar {
+.navitem {
   color: white;
   font-weight: 600;
   font-size: 1.5rem;
   margin: 0 20px;
+}
+
+.navitemactive {
+  text-decoration: underline;
 }
 
 /* Home */
@@ -23,12 +27,9 @@
   overflow-y: hidden;
 }
 
-.navbar > header {
+.headerbar > header {
   background-color: var(--ibottagray);
   height: 10vh;
-
-  box-sizing: border-box;
-  margin: 0 0 0 -20px;
   
   position: fixed;
   width: 100%;
@@ -39,12 +40,12 @@
   align-items: center;
 }
 
-.navbar > header > nav {
+.headerbar > header > nav {
   display: flex;
   flex-direction: row;
 }
 
-.navbar > header > nav > h2 {
+.headerbar > header > nav > h2 {
   display: flex;
   flex-direction: column;
 
