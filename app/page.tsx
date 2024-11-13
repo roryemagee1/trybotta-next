@@ -77,7 +77,7 @@ export default async function Home() {
             />
             <div className="bg-white rounded-xl absolute top-[280px] left-[20px] max-w-prose">
             <p className={`${roboto.className} text-4xl bg-white rounded-xl font-semibold p-[5px]`}>
-              The Top 10 Changes in Education since the Pandemic
+              The Top 10 Changes in Education for Gen Z Students
             </p>
           </div>
           <div className="rounded-full absolute top-[340px] right-[20px] bg-[#0a7986] p-[10px]">
@@ -94,7 +94,7 @@ export default async function Home() {
             />
             <div className="bg-white rounded-xl absolute top-[280px] left-[20px] max-w-prose">
             <p className={`${roboto.className} text-4xl bg-white rounded-xl font-semibold p-[5px]`}>
-              How Will Climate Change Affect your Summer?
+              Summer just Keeps Getting Better and Better
             </p>
           </div>
           <div className="rounded-full absolute top-[340px] right-[20px] bg-[#0a7986] p-[10px]">
