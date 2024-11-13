@@ -80,7 +80,7 @@
 }
 
 .panelspacer {
-  min-width: 35vw;
+  min-width: 30vw;
   min-height: calc(100vh - 100px);
 }
 
@@ -89,7 +89,7 @@
 .panel {
   background-color: azure;
 
-  min-width: 35vw;
+  min-width: 30vw;
   min-height: calc(100vh - 100px);
 
   border: 1px solid lightgrey;
@@ -97,7 +97,7 @@
   position: fixed;
   top: 100px;
   /* left: 0; */
-  left: 65vw;
+  left: 70vw;
 }
 
 /* View */
@@ -105,7 +105,7 @@
 .view {
   background-color: gainsboro;
 
-  min-width: 65vw;
+  min-width: 70vw;
   min-height: calc(100vh - 100px);
 
   overflow-y: auto;
@@ -141,7 +141,7 @@
   display: flex;
   flex-direction: column;
 
-  margin: 15px;
+  margin: 15px 20px;
 }
 
 .formpanel > div > label {
@@ -166,7 +166,7 @@
   color: white;
   border-radius: 30px;
   font-weight: 600;
-  margin: 0 10px;
+  margin: 0 20px;
   width: 150px;
 }
 
