@@ -59,7 +59,7 @@ export default async function Home() {
           />
           <div className="bg-white rounded-xl absolute top-[280px] left-[20px] max-w-prose">
             <p className={`${roboto.className} text-5xl bg-white rounded-xl font-semibold p-[5px]`}>
-              How Inflation will Affect Lunchtime in 2024
+              How to pack the perfect school lunch
             </p>
           </div>
           <div className="rounded-full absolute top-[340px] right-[20px] bg-[#0a7986] p-[10px]">
@@ -77,7 +77,7 @@ export default async function Home() {
             />
             <div className="bg-white rounded-xl absolute top-[280px] left-[20px] max-w-prose">
             <p className={`${roboto.className} text-4xl bg-white rounded-xl font-semibold p-[5px]`}>
-              The Top 10 Changes in Education for Gen Z Students
+              6 ways to save on back-to-school shopping
             </p>
           </div>
           <div className="rounded-full absolute top-[340px] right-[20px] bg-[#0a7986] p-[10px]">
@@ -94,7 +94,7 @@ export default async function Home() {
             />
             <div className="bg-white rounded-xl absolute top-[280px] left-[20px] max-w-prose">
             <p className={`${roboto.className} text-4xl bg-white rounded-xl font-semibold p-[5px]`}>
-              Summer just Keeps Getting Better and Better
+              Save big on the ultimate summer pool party
             </p>
           </div>
           <div className="rounded-full absolute top-[340px] right-[20px] bg-[#0a7986] p-[10px]">
